@@ -1,0 +1,20 @@
+.form input{
+    border: 1px solid black;
+}
+
+input:required{
+    border: 1px solid red;
+}
+
+.valid {
+    color: red;
+}
+
+.button {
+    background: darkgrey;
+}
+
+.button2 {
+    background: grey;
+    color: white;
+}

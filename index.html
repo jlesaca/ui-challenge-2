@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+        <label class="first">Text Input</label></br>
+        <input type="text" placeholder="placeholder"/></br></br>
+        <label class="second">Text input w/ validation error</label></br>
+        <input type="password" placeholder="placeholder" pattern="(?=.*[a=z])(?=.*[A-Z]).{8,12}" required/> 
+        <div class="valid">please enter valid username</div>
+    </form>
+    <form class="checkbox">
+        <p>checkbox</p>
+        <label><input type="checkbox"></label>
+        <label><input type="checkbox" checked></label>
+    </form>
+    <form class="radio">
+        <p>radio</p>
+        <input type="radio"/>
+        <input type="radio" checked/>
+    </form>
+    <div>
+        <button class="button">submit</button>
+        <button class="button2">submit</button>
+    </div>
+</body>
+</html>
