@@ -6,29 +6,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>UI Challenge - Custom Form Elements</h1>
-    <form class="form">
-        <label class="first">Text Input</label></br>
-        <input type="text" placeholder="placeholder text"/></br></br>
-        <label class="second">Text input w/ validation error</label></br>
-        <input type="password" placeholder="placeholder text" pattern="(?=.*[a=z])(?=.*[A-Z]).{8,12}" required/> 
-        <div class="valid">please enter valid username</div>
-    </form>
-    <form class="checkbox">
-        <p>check box</p>
-        <label><input type="checkbox"></label>
-        <label><input type="checkbox" checked></label>
-    </form>
-    </div>
-    <form class="radio">
-        <p>radio</p>
-        <input type="radio"/>
-        <input type="radio" checked/>
-    </form>
-    <div>
-        <p>buttons</p>
-        <button class="button">submit</button>
-        <button class="button2">submit</button>
-    </div>
+    <header class="container">
+        <h1>UI Challenge - Custom Form Elements</h1>
+    </header>
+    <main>
+        <form class="form-main">
+            <div class="container text-input">
+                <div>
+                    <label for="input-one" class="label">text input</label>
+                    <input id="input-one" placeholder="placeholder text" type="text">
+                </div>
+                <div>
+                    <label for="input-two" class="label">text input w/ validation error</label>
+                    <input id="input-twp" placeholder="placeholder text" type="text" pattern="[a-zA-Z]+" required>
+                    <label id="input-error">please enter a valid username</label>
+                </div>
+            </div>
+    
+            <div class="container checkbox-input">
+                <label class="label">checkbox</label>
+                <div>
+                    <input id="checkbox-one" type="checkbox">
+                    <label for="checkbox-one"></label>
+                </div>
+                <div>
+                    <input id="checkbox-two" type="checkbox">
+                    <label for="checkbox-two"></label>
+                </div>
+            </div>
+            
+            <div class="container radio-input">
+                <label class="label">radio</label>
+                <div>
+                    <input id="radio-one" type="radio">
+                    <label for="radio-one"></label>
+                </div>
+                <div>
+                    <input id="radio-two" type="radio">
+                    <label for="radio-two"></label>
+                </div>
+            </div>
+            
+            <div class="container button-input">
+                <label class="label" for="">buttons</label>
+                <button id="button-one" type="button">Submit</button>
+                <button id="button-two" type="button">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
